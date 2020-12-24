@@ -18,7 +18,6 @@ class App extends Component{
   }
 
   deletePost =(id)=>{
-    let undeletedPosts = this.props.users.filter((user) => user.id !== id)
     this.props.deletePost(id)
   }
 
