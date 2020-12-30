@@ -105,4 +105,4 @@ const mapDispatchToProps = {
     editPost: editPost
 }
 
-export default connect(null, mapDispatchToProps) (EditPostForm);
+export default connect(null, mapDispatchToProps)(EditPostForm);

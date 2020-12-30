@@ -25,6 +25,7 @@ const postsReducer = (state = initialState, action) => {
                 Date: action.payload.Date,
                 Condition: action.payload.Condition,
                 Picture: action.payload.Picture,
+                id: action.payload.id 
             }
             return { ...state, users: [...state.users, newPost] }
         case "DELETE_POST":

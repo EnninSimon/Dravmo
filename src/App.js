@@ -18,6 +18,7 @@ class App extends Component{
   }
 
   deletePost =(id)=>{
+    // let undeletedPosts = this.props.users.filter((user) => user.id !== id)
     this.props.deletePost(id)
   }
 
@@ -35,7 +36,7 @@ class App extends Component{
         <AddPostForm addPost = {this.addNewPost}/>
         <ProjectHead />
         <Posts usersData={this.props.users} 
-        deletePost= {this.deletePost} 
+        deletePost= {this.deletePost}
         editPost={this.editPost}
         />
       </>
